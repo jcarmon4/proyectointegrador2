@@ -77,11 +77,24 @@ WSGI_APPLICATION = 'proyectointegrador2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pi1-eafit-db',
+        'USER': 'jcarmon4@pi1-eafit-db',
+        'PASSWORD': 'Eafit2020*',
+        'HOST': 'pi1-eafit-db.mysql.database.azure.com',
+        'PORT': '3306'
     }
 }
-
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pi1-eafit-db
+        'USER': 'root',
+        'PASSWORD': 'admin',
+    }
+}
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
