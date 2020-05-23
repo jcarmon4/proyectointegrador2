@@ -25,7 +25,7 @@ SECRET_KEY = 'gjbkbx4!i=dz_k46f=mje3v+45!+3gqb3u5k=fy^7vfb$*tye6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -89,7 +89,7 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'pi1-eafit-db
+        'NAME': 'pi1-eafit-db',
         'USER': 'root',
         'PASSWORD': 'admin',
     }
